@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0c404d;
+   
+}
+
+.ab {
+  background-color: rgb(228, 228, 159);
+}
+
+.db:disabled {
+ background-color:rgb(159, 194, 178)
+}
+
+.qt {
+  background-color: tomato;
+}
