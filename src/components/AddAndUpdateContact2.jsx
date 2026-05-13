@@ -23,7 +23,7 @@ const AddAndUpdateContact2 = ({ isOpen, onClose, isUpdate, contact }) => {
      onAuthStateChanged(auth, (user) => { //recupera dados de auth
     const userEmail = user.email;
 
-      if(userEmail === 'lucas@csn.com'){
+      if(userEmail === 'adm@csn.com'){
           try {
       {
 
