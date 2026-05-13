@@ -37,7 +37,7 @@ const Menu = () => {
         <div className="flex gap-2">
           <div className="relative flex flex-grow items-center">
 
-<div className="grid grid-cols-2 gap-25">
+<div className="grid grid-cols-2 gap-15">
 
   <div className="flex flex-col items-center">
   <GiMineTruck 
