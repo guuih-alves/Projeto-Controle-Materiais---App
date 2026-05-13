@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './index.css'
 
 //PAGES &COMPONENTS
-import Login from './login'
+import Login from './Login'
 import Material from './Fleet'
 import First from './first'
 import Menu from './menu'
