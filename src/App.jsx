@@ -11,6 +11,7 @@ import TerrainDrilling from './Terrain-Drilling'
 import UMR from './UMR'
 import Redes from './Redes'
 import MEMS from './MEMS'
+import Chicotes from './Chicotes'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/UMR" element={<UMR/>}></Route>
           <Route path="/Redes" element={<Redes/>}></Route>
           <Route path="/MEMS" element={<MEMS/>}></Route>
+          <Route path="/Chicotes" element={<Chicotes/>}></Route>
        </Routes>
     </Router>
   )

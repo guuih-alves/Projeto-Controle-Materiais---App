@@ -12,7 +12,7 @@ import { GiNetworkBars } from "react-icons/gi";
 import { PiTireDuotone } from "react-icons/pi";
 import { LuDrill } from "react-icons/lu";
 import { FaTractor } from "react-icons/fa";
-import { FaBoxOpen } from "react-icons/fa";
+import { MdCable } from "react-icons/md";
 import { GiSolarPower } from "react-icons/gi";
 
 
@@ -78,15 +78,11 @@ const Menu = () => {
   </div>
 
   <div className="flex flex-col items-center">
-  <FaBoxOpen
+  <MdCable 
     className="text-7xl text-white cursor-pointer hover:opacity-80 transition-opacity"
-    onClick={() => {
-      alert('Função não habilitada.');
-      // navigate('/Materials')
-    }}
+    onClick={() => navigate('/Chicotes')}
   />
-  
-  <p className="text-white bg-gray-600">MATERIAIS</p>
+  <p className="text-white bg-gray-600">CHICOTES</p>
 </div>
 
         <div> <MdLogout onClick={handleLogout}   className="cursor-pointer text-5xl text-white" />  
