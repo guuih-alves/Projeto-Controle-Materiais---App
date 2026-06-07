@@ -23,7 +23,7 @@ const AddAndUpdateContact5 = ({ isOpen, onClose, isUpdate, contact }) => {
      onAuthStateChanged(auth, (user) => { //recupera dados de auth
     const userEmail = user.email;
 
-      if(userEmail === 'adm@csn.com'){
+      if(userEmail === 'josiana@csn.com'){
           try {
       {
 
@@ -47,15 +47,25 @@ const AddAndUpdateContact5 = ({ isOpen, onClose, isUpdate, contact }) => {
   
 
   const updateContact = async (contact, id) => {
-    try {
-      const contactRef = doc(db, "redes", id);
-      await updateDoc(contactRef, contact);
-      onClose();
-      toast.success("Material atualizado com sucesso");
-    } catch (error) {
-      console.log(error);
-    }
-  };
+   onAuthStateChanged(auth, async (user) => {
+     const userEmail = user?.email;
+ 
+     if (userEmail === "josiana@csn.com") {
+       try {
+         const contactRef = doc(db, "redes", id);
+ 
+         await updateDoc(contactRef, contact);
+ 
+         onClose();
+         toast.success("Material atualizado com sucesso");
+       } catch (error) {
+         console.log(error);
+       }
+     } else {
+       alert("Sem permissão para atualização");
+     }
+   });
+ };
 
 
   return (

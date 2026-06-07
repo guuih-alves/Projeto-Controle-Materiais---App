@@ -73,7 +73,11 @@ const ContactCard4 = ({ contact }) => {
   
           <RxUpdate  onClick={onOpen} className="cursor-pointer" />
           <IoMdTrash
-            onClick={() => prevdelete(contact.id)}
+
+            onClick={() => 
+              alert('Desabilitado')
+              /*prevdelete(contact.id)*/
+            }
             className="cursor-pointer text-orange"
           />
         </div>
